@@ -18,6 +18,8 @@
         <activity android:name=".SubAcitivity"/>
         <activity android:name=".RomanceM"/>
         <activity android:name=".ActionM"/>
+        <activity android:name=".ComedyM"/>
+        <activity android:name=".ThrillerM"/>
     </application>
 
 </manifest>

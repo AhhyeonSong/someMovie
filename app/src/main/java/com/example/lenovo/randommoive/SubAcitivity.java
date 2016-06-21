@@ -46,7 +46,7 @@ public class SubAcitivity extends Activity implements View.OnClickListener{
                 Intent romance= new Intent(SubAcitivity.this, RomanceM.class);
                 startActivity(romance); break;
             case R.id.horror:
-                Intent horror= new Intent(SubAcitivity.this, MainActivity.class);
+                Intent horror= new Intent(SubAcitivity.this, ActionM.class);
                 startActivity(horror); break;
             case R.id.action:
                 Intent action= new Intent(SubAcitivity.this, ActionM.class);
@@ -55,7 +55,7 @@ public class SubAcitivity extends Activity implements View.OnClickListener{
                 Intent fantasy= new Intent(SubAcitivity.this, MainActivity.class);
                 startActivity(fantasy); break;
             case R.id.comedy:
-                Intent comedy= new Intent(SubAcitivity.this, MainActivity.class);
+                Intent comedy= new Intent(SubAcitivity.this, ComedyM.class);
                 startActivity(comedy); break;
             case R.id.thriller:
                 Intent thriller= new Intent(SubAcitivity.this, MainActivity.class);

@@ -5,21 +5,21 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 /**
- * Created by Lenovo on 2016-06-20.
+ * Created by Lenovo on 2016-06-21.
  */
-public class ActionM extends Activity {
-
+public class ComedyM extends Activity {
     Integer Random;
     ImageView mImageView;
+
     public static final int[] ran= {
-            R.drawable.action1, R.drawable.action2, R.drawable.action3,
-            R.drawable.action4, R.drawable.action5, R.drawable.action6,
-            R.drawable.action7, R.drawable.action8, R.drawable.action9
+            R.drawable.comedy1, R.drawable.comedy2, R.drawable.comedy3,
+            R.drawable.comedy4, R.drawable.comedy5, R.drawable.comedy6,
+            R.drawable.comedy7, R.drawable.comedy8, R.drawable.comedy9
     };
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_action);
-        mImageView=(ImageView) findViewById(R.id.a1);
+        setContentView(R.layout.activity_comedy);
+        mImageView=(ImageView) findViewById(R.id.c1);
         Random = (int)(Math.random()*10)-1;
         int res = ran[Random];
         mImageView.setImageResource(res);
