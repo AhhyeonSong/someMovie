@@ -11,7 +11,7 @@
     android:orientation="vertical"
     tools:context="com.example.lenovo.randommoive.MainActivity"
     android:weightSum="1"
-    android:background="#ffffff">
+    android:background="#fecf15">
 
 <!--<LinearLayout-->
     <!--android:layout_width="match_parent"-->
@@ -19,32 +19,35 @@
 
     <!--&gt;-->
     <ImageView
-        android:src="@drawable/movie01"
-        android:layout_width="225dp"
-        android:layout_height="131dp"
-        android:layout_gravity="top|center_horizontal" />
+        android:src="@drawable/main"
+        android:layout_width="288dp"
+        android:layout_height="116dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_weight="0.26" />
+    <ImageView
+        android:src="@drawable/main_r"
+        android:layout_width="126dp"
+        android:layout_height="84dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="40dp" />
 
 <!--</LinearLayout>-->
-<LinearLayout
+
+    <LinearLayout
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_height="97dp"
     android:orientation="vertical"
     android:layout_gravity="center_horizontal"
-    android:gravity="bottom">
-    <!--<ViewFlipper-->
-            <!--android:id="@+id/view_flip"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent">-->
+    android:gravity="bottom"
+        android:weightSum="1">
 
+        <ImageButton
+            android:id="@+id/img_but"
+            android:src="@drawable/start"
+            android:layout_width="291dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="300dp" />
 
-    <ImageButton
-        android:src="@drawable/start"
-        android:layout_width="wrap_content"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:id="@+id/but_start"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="350dp" />
-</LinearLayout>
-    <!--</ViewFlipper>-->
+    </LinearLayout>
+
 </LinearLayout>

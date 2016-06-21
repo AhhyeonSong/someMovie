@@ -3,16 +3,110 @@
 android:orientation="vertical"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="#ffffff">
+android:background="#ffe9db"
+    android:weightSum="1">
 <ImageView
     android:layout_gravity="center_horizontal"
     android:id="@+id/gerne"
     android:layout_width="330dp"
     android:layout_height="100dp"
-    android:src="@drawable/jang"
+    android:src="@drawable/genre"
     android:layout_marginTop="10dp" />
-<RadioButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
 
+    <RadioGroup
+        android:id="@+id/rg_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp">
+        <RadioButton
+            android:id="@+id/romance"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:checked="false" />
+           <!--android:background="@drawable/romance_c"-->
+        <ImageView
+            android:src="@drawable/romance_c"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-55dp" />
+        <RadioButton
+            android:id="@+id/thriller"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+        <ImageView
+            android:src="@drawable/thriller_c"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-40dp" />
+        <RadioButton
+            android:id="@+id/action"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:checked="false" />
+        <ImageView
+            android:src="@drawable/action_c"
+            android:layout_width="113dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-33dp" />
+        <RadioButton
+            android:id="@+id/horror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_marginTop="10dp" />
+        <ImageView
+            android:src="@drawable/horror_c"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-30dp" />
+        <RadioButton
+            android:id="@+id/comedy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_marginTop="10dp" />
+        <ImageView
+            android:src="@drawable/comedy_c"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-30dp" />
+        <RadioButton
+            android:id="@+id/fantasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_marginTop="10dp" />
+        <ImageView
+            android:src="@drawable/fantasy_c"
+            android:layout_width="152dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-7dp"
+            android:layout_marginTop=" -30dp" />
+        <RadioButton
+            android:id="@+id/animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_marginTop="10dp" />
+        <ImageView
+            android:src="@drawable/animation_c"
+            android:layout_width="119dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-30dp" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="@string/but_next"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.31" />
 </LinearLayout>
